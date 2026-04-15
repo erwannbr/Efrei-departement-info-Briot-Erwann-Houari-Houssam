@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script type="text/javascript" src="../json/script.js"></script>
+        <script type="text/javascript" src="../js/script.js"></script>
         <title>Home</title>
 
         <link rel="stylesheet" href="../css/style1.css">
@@ -41,6 +41,14 @@
         <button id="tirage" onclick="chiffrealeatoire()">
             <img src="../img/carte.png">
         </button>
+
+        <!-- Modal pour afficher la carte -->
+        <div id="cardModal" class="modal">
+            <div class="modal-content">
+                <img id="cardImage" src="" alt="Card">
+                <button class="close-btn" onclick="closeCard()">✕</button>
+            </div>
+        </div>
 
 
 

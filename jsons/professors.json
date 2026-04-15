@@ -1,0 +1,31 @@
+{
+    "communProfessor": [
+        {
+        "id": "1",
+        "name": "Soglo Yaovi",
+        "attack": "0",
+        "defense": "14000",
+        "image": "../img/yaovi.png"
+        }
+    ],
+
+    "rareProfessor": [
+        {
+        "id": "1",
+        "name": "Lena Trebaul",
+        "attack":  "5409",
+        "defense": "7030",
+        "image": "../img/lena.png"
+        }
+    ],
+
+    "legendaryProfessor": [
+        {
+        "id" : "1",
+        "name" : "Zarhaa Morsen",
+        "attack" : "13700",
+        "defense" : "14079",
+        "image" : "../img/zarhaa.png"
+        }
+    ]
+}
