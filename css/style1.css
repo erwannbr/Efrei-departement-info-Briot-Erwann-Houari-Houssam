@@ -1,0 +1,147 @@
+.page {
+    background-color: #FFF5F5;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: #FF499E;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* footer */
+.footer {
+    background-color: #1E2A67;
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+}
+
+#text-footer {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+#text-footer:hover{
+    text-decoration: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* header */
+.head-header {
+    background-color: #1E2A67;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+/* Left header */
+#text-head-header{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.logoefrei {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Right header */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 25%;
+}
+
+/* Navigation */
+.navigation {
+    background-color: #FF499E;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.footer-nav li {
+    flex: 1;
+    height: 100%;
+}
+
+.footer-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer-nav a:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+/* Gacha */
+
+#tirage {
+    display: block;
+    margin: 50px auto 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
