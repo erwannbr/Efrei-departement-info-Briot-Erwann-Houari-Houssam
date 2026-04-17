@@ -21,7 +21,7 @@ function chiffrealeatoire(){
 
     if (!cards) {
         console.log("Chargement des cartes...");
-        fetchJSON('../jsons/professors.json');
+        fetchJSON('/jsons/professors.json');
         return;
     }
     
@@ -76,5 +76,26 @@ window.onclick = function(event) {
 }
 
 window.addEventListener('load', function() {
-    fetchJSON('../jsons/professors.json');
+    fetchJSON('/jsons/professors.json');
 });
+
+
+function connexion() {
+    var username = document.getElementById('Name').value;
+    var password = document.getElementById('password').value;
+
+    if (username == "houss" && password == "lpb"){
+        console.log("Good password");
+        window.location.href = "prof1/home.html";
+    } else if (username == "erwann" && password == "lpb"){
+        console.log("Good password");
+        window.location.href = "prof2/home.html";
+    } else {
+        console.log("Bad password");
+        window.location.href = "../connexion.html";
+    }
+}
+
+function logout() {
+    window.location.href = "../connexion.html";
+}
