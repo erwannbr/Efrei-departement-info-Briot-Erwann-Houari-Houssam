@@ -33,6 +33,29 @@
     color: white;
 }
 
+/* footer-flex */
+.footer-flex {
+    background-color: #1E2A67;
+    display: flex;
+    justify-content: center;
+}
+
+#text-footer-flex {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+#text-footer-flex:hover{
+    text-decoration: none;
+}
+
+.footer-flex a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* header */
 .head-header {
@@ -125,7 +148,6 @@ h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-weight: normal;
-    text-decoration: underline;
 }
 
 /* gacha */
@@ -370,3 +392,53 @@ h1 {
     border-color: #1e3a8a;
 }
 
+/* planning */
+
+.planning {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.planning-table {
+    width: 90%;
+    max-width: 1800px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #cebebe;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+}
+
+.planning-table th,
+.planning-table td {
+    border: 1px solid rgba(30, 42, 103, 0.2);
+    padding: 12px 10px;
+    min-width: 120px;
+    margin: 0;
+    text-align: center;
+}
+
+.planning-table thead th {
+    background-color: #1E2A67;
+    color: white;
+    font-weight: 600;
+}
+
+.planning-table tbody th {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: #1E2A67;
+    font-weight: 600;
+    width: 110px;
+}
+
+.planning-table tbody td {
+    background-color: rgba(255, 255, 255, 0.18);
+    height: 34px;
+}
