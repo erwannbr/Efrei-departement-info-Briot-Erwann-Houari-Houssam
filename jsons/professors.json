@@ -5,8 +5,100 @@
         "name": "Soglo Yaovi",
         "attack": "0",
         "defense": "14000",
-        "image": "../img/yaovi.png"
+        "image": "/img/yaovi.png"
+        },
+        {
+        "id": "2",
+        "name": "Salim Nahle",
+        "attack": "4250",
+        "defense": "3100",
+        "image": "/img/salim.png"
+        },
+        {
+        "id": "3",
+        "name": "Etienne Pernot",
+        "attack": "5800",
+        "defense": "4950",
+        "image": "/img/etienne.png"
+        },
+        {
+        "id": "4",
+        "name": "Stephany Rajeh",
+        "attack": "3600",
+        "defense": "5200",
+        "image": "/img/stephany.png"
+        },
+        {
+        "id": "5",
+        "name": "Ilyes Jenhani",
+        "attack": "5120",
+        "defense": "2850",
+        "image": "/img/ilyes.png"
+        },
+        {
+        "id": "6",
+        "name": "Jean-Charles Huet",
+        "attack": "4300",
+        "defense": "5900",
+        "image": "/img/jean_charles.png"
+        },
+        {
+        "id": "7",
+        "name": "Johannes Gomolka",
+        "attack": "1250",
+        "defense": "4700",
+        "image": "/img/johannes.png"
+        },
+        {
+        "id": "8",
+        "name": "Boussad Ait Salem",
+        "attack": "5420",
+        "defense": "3800",
+        "image": "/img/boussad.png"
+        },
+        {
+        "id": "9",
+        "name": "Nadjib AIT SAADI",
+        "attack": "4100",
+        "defense": "5650",
+        "image": "/img/nadjib.png"
+        },
+        {
+        "id": "10",
+        "name": "Fériel Bouakkaz",
+        "attack": "2450",
+        "defense": "5800",
+        "image": "/img/feriel.png"
+        },
+        {
+        "id": "11",
+        "name": "Lamine Bougueroua",
+        "attack": "4900",
+        "defense": "3200",
+        "image": "/img/lamine.png"
+        },
+        {
+        "id": "12",
+        "name": "Yessin Neggaz",
+        "attack": "5600",
+        "defense": "4150",
+        "image": "/img/yessin.png"
+        },
+        {
+        "id": "13",
+        "name": "Cherifa Ben Khelil",
+        "attack": "3850",
+        "defense": "4200",
+        "image": "/img/cherifa.png"
+        },
+        {
+        "id": "14",
+        "name": "Marciel Barros Pereira",
+        "attack": "5100",
+        "defense": "2950",
+        "image": "/img/marciel.png"
         }
+
     ],
 
     "rareProfessor": [
@@ -15,7 +107,70 @@
         "name": "Lena Trebaul",
         "attack":  "5409",
         "defense": "7030",
-        "image": "../img/lena.png"
+        "image": "/img/lena.png"
+        },
+        {
+        "id": "2",
+        "name": "Helen Kassel",
+        "attack": "7000",
+        "defense": "6807",
+        "image": "/img/helen.png"
+        },
+        {
+        "id": "3",
+        "name": "Félix Baschenis",
+        "attack": "9150",
+        "defense": "7800",
+        "image": "/img/felix.png"
+        },
+        {
+        "id": "4",
+        "name": "Faten Chaieb-chakchouk",
+        "attack": "8200",
+        "defense": "9400",
+        "image": "/img/faten.png"
+        },
+        {
+        "id": "5",
+        "name": "Ralph Bou Nader",
+        "attack": "7650",
+        "defense": "8800",
+        "image": "/img/ralph.png"
+        },
+        {
+        "id": "6",
+        "name": "Yvan Guifo Fodjo",
+        "attack": "9420",
+        "defense": "7150",
+        "image": "/img/yvan.png"
+        },
+        {
+        "id": "7",
+        "name": "Rado Rakotonarivo",
+        "attack": "8850",
+        "defense": "7900",
+        "image": "/img/rado.png"
+        },
+        {
+        "id": "8",
+        "name": "Max Agueh",
+        "attack": "9550",
+        "defense": "8100",
+        "image": "/img/max.png"
+        },
+        {
+        "id": "9",
+        "name": "Layth Sliman",
+        "attack": "8900",
+        "defense": "9250",
+        "image": "/img/layth.png"
+        },
+        {
+        "id": "10",
+        "name": "Dario Vieira",
+        "attack": "7400",
+        "defense": "8600",
+        "image": "/img/dario.png"
         }
     ],
 
@@ -25,7 +180,42 @@
         "name" : "Zarhaa Morsen",
         "attack" : "13700",
         "defense" : "14079",
-        "image" : "../img/zarhaa.png"
+        "image" : "/img/zarhaa.png"
+        },
+        {
+        "id" : "2",
+        "name" : "Carlo Bianca",
+        "attack" : "14000",
+        "defense" : "13220",
+        "image" : "/img/carlo.png"
+        },
+        {
+        "id" : "3",
+        "name" : "Asma Gabis",
+        "attack" : "13300",
+        "defense" : "12300",
+        "image" : "/img/asma.png"
+        },
+        {
+        "id" : "4",
+        "name" : "Nicolas Flasque",
+        "attack" : "13400",
+        "defense" : "12700",
+        "image" : "/img/nicolas.png"
+        },
+        {
+        "id" : "5",
+        "name" : "Federico Zalamea",
+        "attack" : "13500",
+        "defense" : "14000",
+        "image" : "/img/federico.png"
+        },
+        {
+        "id" : "6",
+        "name" : "Amir Chachoui",
+        "attack" : "14700",
+        "defense" : "14700",
+        "image" : "/img/amir.png"
         }
     ]
 }

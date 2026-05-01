@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script type="text/javascript" src="../../../js/script.js"></script>
-        <title>Home</title>
+        <script type="text/javascript" src="../../../js/script.js" defer></script>
+        <title>My Collection</title>
 
         <link rel="stylesheet" href="../../../css/style1.css">
     </head>
@@ -30,13 +30,22 @@
             <ul class="footer-nav">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="planning.html">Planning</a></li>
-                <li><a href="prof.html">Profs</a></li>
+                <li><a href="prof.html">Professors</a></li>
                 <li><a href="notes.html">Grades</a></li>
                 <li ><a href="gacha.html">★</a></li>
             </ul>
             </div>
     
         </header>
+
+        <h1>My Collection</h1>
+
+        <div class="collection-actions">
+            <button onclick="exportCollection()" class="export-btn">Export</button>
+            <button onclick="clearCollection()" class="clear-btn">Clear Collection</button>
+        </div>
+
+        <div id="collection-list" class="collection-grid"></div>
 
         <footer class="footer">
             <p id="text-footer">©2026 Efrei | <a href="aboutus.html">About us</a> | <a href="https://www.efrei.fr/"> Efrei. fr</a></p>
