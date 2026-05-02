@@ -442,3 +442,13 @@ h1 {
     background-color: rgba(255, 255, 255, 0.18);
     height: 34px;
 }
+
+.planning-table td.reunion {
+    background-color: rgb(255, 174, 174);
+    font-weight: 600;
+}
+
+.planning-table td.lesson {
+    background-color: rgb(255, 219, 119);
+    font-weight: 600;
+}
