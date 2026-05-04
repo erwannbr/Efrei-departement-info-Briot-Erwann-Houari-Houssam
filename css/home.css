@@ -111,6 +111,7 @@
     border-radius: 10px;
     overflow: hidden; 
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-decoration: none;
 }
 
 .mini-planning th,
@@ -119,18 +120,21 @@
     text-align: center;
     border: 1px solid #E2E2E2;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .mini-planning thead th {
     background-color: #1E2A67; 
     color: white;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .mini-planning tbody td:first-child {
     background-color: #F8F9FA;
     color: #1E2A67;
     font-weight: bold;
+    text-decoration: none;
 }
 
 
@@ -138,11 +142,13 @@
     background-color: rgb(255, 219, 119);
     font-weight: bold;
     color: #333;
+    text-decoration: none;
 }
 
 .mini-planning td.reunion {
     background-color: rgb(255, 174, 174);
     font-weight: bold;
+    text-decoration: none;
     color: #333;
 }
 
@@ -228,4 +234,24 @@
     background-color: #D1D5DB;
     margin: 20px 0;
     width: 100%;
+}
+
+
+/* --- CARD GAME --- */
+        .cards-container {
+            display : flex;
+            align-items: center;
+                gap: 10px; 
+        }
+        .cards-container img {
+            width: small;
+            height: small;
+        }
+
+/* --- CONTACT US --- */
+.talk-to-us-btn a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
 }

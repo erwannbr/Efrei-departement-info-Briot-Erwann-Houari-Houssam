@@ -406,6 +406,7 @@ h1 {
     align-items: center;
     margin: 40px auto 0;
     text-align: center;
+    text-decoration: none;
 }
 
 .planning-table {
@@ -418,6 +419,7 @@ h1 {
     overflow: hidden;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
     margin-bottom: 40px;
+    text-decoration: none;
 }
 
 .planning-table th,
@@ -427,12 +429,14 @@ h1 {
     min-width: 120px;
     margin: 0;
     text-align: center;
+    text-decoration: none;
 }
 
 .planning-table thead th {
     background-color: #1E2A67;
     color: white;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .planning-table tbody th {
@@ -440,19 +444,23 @@ h1 {
     color: #1E2A67;
     font-weight: 600;
     width: 110px;
+    text-decoration: none;
 }
 
 .planning-table tbody td {
     background-color: rgba(255, 255, 255, 0.18);
     height: 34px;
+    text-decoration: none;
 }
 
 .planning-table td.reunion {
     background-color: rgb(255, 174, 174);
     font-weight: 600;
+    text-decoration: none;
 }
 
 .planning-table td.lesson {
     background-color: rgb(255, 219, 119);
     font-weight: 600;
+    text-decoration: none;
 }
