@@ -17,7 +17,6 @@ async function fetchJSON(filePath) {
 
 async function chiffrealeatoire(){
     if (!cards) {
-        console.log("Chargement des cartes...");
         await fetchJSON('../../../jsons/professors.json');
     }
 
@@ -27,19 +26,16 @@ async function chiffrealeatoire(){
     let selectedCard;
 
     if (random < 0.7) {
-        console.log("Commun packed");
         if (cards.common.length > 0) {
             selectedCard = cards.common[Math.floor(Math.random() * cards.common.length)];
         }
     } else if (random < 0.95) {
-        console.log("Rare packed");
         if (cards.rare.length > 0) {
             selectedCard = cards.rare[Math.floor(Math.random() * cards.rare.length)];
         } else {
             console.log("Error")
         }
     } else {
-        console.log("Legendary packed");
         if (cards.legendary.length > 0) {
             selectedCard = cards.legendary[Math.floor(Math.random() * cards.legendary.length)];
         } else {
@@ -89,7 +85,7 @@ function loadCollection() {
 }
 
 function clearCollection() {
-    if (confirm("Vider toute la collection ?")) {
+    if (confirm("Empty collection?")) {
         localStorage.removeItem(getCollectionKey());
         loadCollection();
     }
@@ -99,7 +95,7 @@ function exportCollection() {
     const collection = JSON.parse(localStorage.getItem(getCollectionKey()) || "[]");
 
     if (collection.length === 0) {
-        alert("Collection vide, rien à exporter !");
+        alert("Collection empty, nothing to export !");
         return;
     }
 
@@ -121,24 +117,51 @@ function displayCard(card) {
     if (!card) return;
 
     const modal = document.getElementById("cardModal");
+    const cardElement = document.querySelector(".card");
     const cardImage = document.getElementById("cardImage");
 
     if (card.image) {
         cardImage.src = card.image;
     }
-    
+
     cardImage.alt = card.name;
     modal.style.display = "flex";
+
+    if (cardElement) {
+        cardElement.classList.remove("is-flipped");
+        setTimeout(() => {
+            cardElement.classList.add("is-flipped");
+        }, 300);
+    }
+}
+
+function toggleCardFlip() {
+    const cardElement = document.querySelector(".card");
+    if (cardElement) {
+        cardElement.classList.toggle("is-flipped");
+    }
 }
 
 function closeCard() {
     const modal = document.getElementById("cardModal");
+    const cardElement = document.querySelector(".card");
+
+    if (cardElement) {
+        cardElement.classList.remove("is-flipped");
+    }
+
     modal.style.display = "none";
 }
 
 window.onclick = function(event) {
     const modal = document.getElementById("cardModal");
     if (event.target == modal) {
+        const cardElement = document.querySelector(".card");
+
+        if (cardElement) {
+            cardElement.classList.remove("is-flipped");
+        }
+
         modal.style.display = "none";
     }
 }
