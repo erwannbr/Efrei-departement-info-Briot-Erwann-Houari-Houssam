@@ -49,7 +49,16 @@
 
         <div id="cardModal" class="modal">
             <div class="modal-content">
-                <img id="cardImage" src="" alt="Card">
+                <div class="card" onclick="toggleCardFlip()">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="../../../img/carte.png" alt="Carte">
+                        </div>
+                        <div class="card-back">
+                            <img id="cardImage" src="" alt="Card">
+                        </div>
+                    </div>
+                </div>
                 <button class="close-btn" onclick="closeCard()">✕</button>
             </div>
         </div>
