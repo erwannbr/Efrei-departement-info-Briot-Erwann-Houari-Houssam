@@ -1,0 +1,48 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey"],
+      "responses": [
+        "Hello! How can I help you with computer science?",
+        "Hi! Do you have a question about a course or a project?"
+      ]
+    },
+    {
+      "tag": "course_info",
+      "patterns": [
+        "what is an algorithm",
+        "explain programming",
+        "what is a variable"
+      ],
+      "responses": [
+        "An algorithm is a sequence of steps used to solve a problem.",
+        "Programming consists of writing instructions that a computer can execute."
+      ]
+    },
+    {
+      "tag": "debug",
+      "patterns": [
+        "my code doesn't work",
+        "i have an error",
+        "bug in my program"
+      ],
+      "responses": [
+        "Can you show me your code and the exact error?",
+        "Which language are you using and what is the error message?"
+      ]
+    },
+    {
+      "tag": "project",
+      "patterns": [
+        "project help",
+        "computer science project idea",
+        "i have to do a project"
+      ],
+      "responses": [
+        "You can create a web application, a game, or an automation tool.",
+        "What level is expected for your project?"
+      ]
+    }
+  ]
+}

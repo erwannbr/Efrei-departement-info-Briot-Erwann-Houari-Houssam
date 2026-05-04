@@ -255,3 +255,27 @@
     gap: 20px;
     text-decoration: none;
 }
+
+#chat-box {
+    border: 1px solid #333;
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    width: 70%;
+    padding: 8px;
+}
+
+button {
+    border: 1px solid #351b5e;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+        background-color: #361e5f;
+    color: #ffffff;
+    border: 1px solid #190f31;
+}
