@@ -4,43 +4,43 @@
     display: flex;
     gap: 30px;
     padding: 40px;
-    max-width: 1200px; /* Pour éviter que ça s'étire trop sur les grands écrans */
+    max-width: 1200px; 
     margin: 0 auto;
-    /* On ajoute une marge en bas pour ne pas que le footer absolu cache le contenu */
+    
     padding-bottom: 100px; 
 }
 
-/* Colonnes */
+
 .left-column {
-    flex: 2; /* Prend 2/3 de l'espace */
+    flex: 2; 
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
 .right-column {
-    flex: 1; /* Prend 1/3 de l'espace */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-/* Cartes (fonds gris clair) */
+
 .home-card {
-    background-color: #F1F1F1; /* Gris très clair du mockup */
+    background-color: #F1F1F1; 
     border-radius: 20px;
     padding: 20px;
 }
 
-/* Enlever le fond pour la section info du jour */
+
 .home-card.no-bg {
     background-color: transparent;
     padding: 0;
 }
 
-/* Titres roses */
+
 .card-title {
-    color: #FF85B3; /* Rose doux */
+    color: #FF85B3; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 0;
     margin-bottom: 15px;
@@ -52,14 +52,14 @@
     text-align: center;
 }
 
-/* Intérieur des cartes (gris plus foncé) */
+
 .card-content {
     background-color: #E2E2E2;
     border-radius: 15px;
     width: 100%;
 }
 
-/* Hauteurs simulées pour ressembler au mockup */
+
 .card-content.large { height: 280px; }
 .card-content.medium { height: 160px; }
 
@@ -67,13 +67,13 @@
 
 /* --- BOUTON TALK TO US --- */
 .talk-to-us-container {
-    margin-top: auto; /* Pousse le bouton tout en bas de la colonne */
+    margin-top: auto; 
     display: flex;
-    justify-content: flex-end; /* Aligne le bouton à droite */
+    justify-content: flex-end; 
 }
 
 .talk-to-us-btn {
-    background-color: #E2E8F0; /* Gris-bleuté */
+    background-color: #E2E8F0; 
     border-radius: 50px;
     padding: 10px 10px 10px 25px;
     display: flex;
@@ -85,11 +85,11 @@
 }
 
 .talk-to-us-btn:hover {
-    transform: scale(1.03); /* Petit effet au survol */
+    transform: scale(1.03); 
 }
 
 .talk-to-us-btn span {
-    color: #FF499E; /* Rose Efrei */
+    color: #FF499E; 
     font-weight: normal;
     font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
