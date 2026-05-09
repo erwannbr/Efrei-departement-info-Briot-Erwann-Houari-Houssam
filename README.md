@@ -15,7 +15,7 @@ specifications.
 ## Course
 
 - Subject: TI402 / TI402P / TI402Bdx — Web Development Project
-- Instructor: Mohamed Hamidi
+- Instructor: Amir Chachoui
 - Academic year: 2025-2026
 
 ## Features
@@ -25,10 +25,11 @@ specifications.
 - Personal home page per user with mini-planning, video feed and quick
   navigation
 - Full weekly planning page rendered as an HTML table
-- Professors directory with interactive flip cards (CSS 3D transforms)
+- Professors directory with interactive flip cards (i took css 3D transform from the web)
 - Grade-management page: student search, dynamic form, scrollable grade list
 - Card-collection mini-game (gacha) with three rarity tiers, animated
-  reveal and 3D card-flip animation
+  reveal and 3D card-flip animation (also from web animation) + You can export you deck
+  to the project of Tom Hausmann to use your cards
 - Personal collection page with persistent storage, JSON export and reset
 - "Talk to us" chatbot driven by an intent-matching JSON dataset
 - About-us page presenting the project members
@@ -108,3 +109,8 @@ User-specific data (collected cards) is stored in the browser's
 - Dynamic features implemented in JavaScript: authentication, gacha
   draw, card flip, persistent collection, chatbot, dynamic grade list
 - Site directory structure does not exceed two levels below `html/`
+
+## Use of AI
+
+We use some ia for the css part we cannot find any ressources on the web,
+or we had no idea about some args.

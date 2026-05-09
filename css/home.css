@@ -263,3 +263,46 @@ button {
     color: #ffffff;
     border: 1px solid #190f31;
 }
+
+
+@media (max-width: 1024px) {
+    .home-container {
+        padding: 25px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .left-column,
+    .right-column {
+        flex: 1 1 100%;
+    }
+
+    .talk-to-us-container {
+        justify-content: center;
+    }
+
+    .mini-planning th,
+    .mini-planning td {
+        padding: 6px 3px;
+        font-size: 12px;
+    }
+
+    #chat-box {
+        height: 250px;
+    }
+
+    #user-input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+}
