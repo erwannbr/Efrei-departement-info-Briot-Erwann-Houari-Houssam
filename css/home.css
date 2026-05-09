@@ -12,8 +12,7 @@
 
 
 .left-column {
-    flex: 2; 
-    flex: 2; 
+    flex: 2;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -42,8 +41,7 @@
 
 
 .card-title {
-    color: #FF85B3; 
-    color: #FF85B3; 
+    color: #FF85B3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 0;
     margin-bottom: 15px;
@@ -56,19 +54,7 @@
 }
 
 
-.card-content {
-    background-color: #E2E2E2;
-    border-radius: 15px;
-    width: 100%;
-}
-
-
-.card-content.large { height: 280px; }
-.card-content.medium { height: 160px; }
-
-.mt-15 { margin-top: 15px; }
-
-/* --- BOUTON TALK TO US --- */
+/* talk to us */
 .talk-to-us-container {
     margin-top: auto; 
     display: flex;
@@ -157,7 +143,7 @@
 
 
 
-/* --- INFO OF THE DAY --- */
+/* info of the day */
 
 .video-card {
     display: flex;
@@ -240,18 +226,14 @@
 }
 
 
-/* --- CARD GAME --- */
-        .cards-container {
-            display : flex;
-            align-items: center;
-                gap: 10px; 
-        }
-        .cards-container img {
-            width: small;
-            height: small;
-        }
+/* card game */
+.cards-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-/* --- CONTACT US --- */
+/* contact us */
 .talk-to-us-btn a {
     display: flex;
     align-items: center;
@@ -274,11 +256,10 @@
 }
 
 button {
-    border: 1px solid #351b5e;
     padding: 10px 20px;
     border-radius: 6px;
     cursor: pointer;
-        background-color: #361e5f;
+    background-color: #361e5f;
     color: #ffffff;
     border: 1px solid #190f31;
 }

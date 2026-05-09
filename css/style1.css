@@ -10,34 +10,6 @@
 
 
 /* footer */
-.footer {
-    background-color: #1E2A67;
-    position: absolute;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
-    left: 0;
-    right: 0;
-        
-}
-
-#text-footer {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-#text-footer:hover{
-    text-decoration: none;
-}
-
-.footer a {
-    text-decoration: none;
-    color: white;
-}
-
-/* footer-flex */
 .footer-flex {
     background-color: #1E2A67;
     display: flex;
@@ -74,11 +46,6 @@
 }
 
 /* left header */
-#text-head-header{
-    color: white;
-    text-decoration: none;
-}
-
 .logo{
     display: flex;
     align-items: center;
@@ -735,20 +702,6 @@ h1 {
     border: 1px solid #ccc;
     width: 250px;
     font-size: 1rem;
-}
-
-.search-btn {
-    width: 25px;
-    height: 25px;
-    background-color: #1a2b4c;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.search-btn:hover {
-    transform: scale(1.1);
 }
 
 .error-msg {
