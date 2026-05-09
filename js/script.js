@@ -195,3 +195,97 @@ function getCollectionKey() {
     const user = localStorage.getItem("currentUser") || "guest";
     return "collection_" + user;
 }
+
+
+
+
+/*grades*/
+const studentsDatabase = {
+    "Houssam": [
+        { module: "Web Development", exam: "TP", grade: "18", comment: "Excellent project!" },
+        { module: "Algorithms", exam: "CE", grade: "14", comment: "Good understanding." }
+    ],
+    "Erwann": [
+        { module: "Networks", exam: "TD", grade: "15.5", comment: "Very participatory." }
+    ],
+    "Amir Chachoui": [
+        { module: "Databases", exam: "DE", grade: "12", comment: "Needs improvement." }
+    ]
+};
+
+let currentSearchedStudent = "";
+
+function searchStudent() {
+    const searchInput = document.getElementById('studentSearch').value.trim();
+    const errorMsg = document.getElementById('errorMessage');
+    const workspace = document.getElementById('gradesWorkspace');
+    const title = document.getElementById('currentStudentTitle');
+
+    errorMsg.innerText = "";
+
+    if (searchInput === "") {
+        errorMsg.innerText = "Please enter a student name.";
+        workspace.style.display = "none";
+        return;
+    }
+
+    const foundKey = Object.keys(studentsDatabase).find(name => name.toLowerCase() === searchInput.toLowerCase());
+
+    if (foundKey) {
+        currentSearchedStudent = foundKey;
+        title.innerText = "Add a grade for " + foundKey;
+        workspace.style.display = "flex";
+        renderGradesList();
+    } else {
+        errorMsg.innerText = "Student not found in the database.";
+        workspace.style.display = "none";
+    }
+}
+
+function renderGradesList() {
+    const listContainer = document.getElementById('gradesList');
+    listContainer.innerHTML = "";
+
+    const grades = studentsDatabase[currentSearchedStudent];
+
+    if (grades.length === 0) {
+        listContainer.innerHTML = "<p style='text-align:center; color:#777; margin-top:20px;'>No grades yet.</p>";
+        return;
+    }
+
+    grades.forEach(gradeObj => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = "grade-item";
+        
+        itemDiv.innerHTML = `
+            <div class="grade-details">
+                <strong>${gradeObj.module}</strong> (${gradeObj.exam})<br>
+                <i style="font-size:0.85em; color:#555;">${gradeObj.comment}</i>
+            </div>
+            <div class="grade-score">${gradeObj.grade} / 20</div>
+        `;
+        
+        listContainer.appendChild(itemDiv);
+    });
+}
+
+function addGrade(event) {
+    event.preventDefault();
+
+    const moduleVal = document.getElementById('moduleSelect').value;
+    const examVal = document.getElementById('examSelect').value;
+    const gradeVal = document.getElementById('gradeInput').value;
+    const commentVal = document.getElementById('commentInput').value;
+
+    studentsDatabase[currentSearchedStudent].push({
+        module: moduleVal,
+        exam: examVal,
+        grade: gradeVal,
+        comment: commentVal ? commentVal : "No commentary"
+    });
+
+    document.getElementById('gradeInput').value = "";
+    document.getElementById('commentInput').value = "";
+
+    renderGradesList();
+}
