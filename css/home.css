@@ -1,18 +1,17 @@
-/* --- PAGE ACCUEIL --- */
+/* home */
 
 .home-container {
     display: flex;
     gap: 30px;
     padding: 40px;
-    max-width: 1200px; /* Pour éviter que ça s'étire trop sur les grands écrans */
+    max-width: 1200px; /* pour éviter que ça s'etire trop sur les grands ecrans */
     margin: 0 auto;
-    /* On ajoute une marge en bas pour ne pas que le footer absolu cache le contenu */
     padding-bottom: 100px; 
 }
 
 /* Colonnes */
 .left-column {
-    flex: 2; /* Prend 2/3 de l'espace */
+    flex: 2; 
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -27,20 +26,20 @@
 
 /* Cartes (fonds gris clair) */
 .home-card {
-    background-color: #F1F1F1; /* Gris très clair du mockup */
+    background-color: #F1F1F1;
     border-radius: 20px;
     padding: 20px;
 }
 
-/* Enlever le fond pour la section info du jour */
+
 .home-card.no-bg {
     background-color: transparent;
     padding: 0;
 }
 
-/* Titres roses */
+/* titres roses */
 .card-title {
-    color: #FF85B3; /* Rose doux */
+    color: #FF85B3; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 0;
     margin-bottom: 15px;

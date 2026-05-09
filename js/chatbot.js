@@ -56,5 +56,4 @@ function processMessage(intents, message) {
     return response;
 }
 
-// Charger au démarrage
 window.onload = loadJSON;
